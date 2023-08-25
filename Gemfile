@@ -47,17 +47,16 @@ group :development, :test do
   gem 'vcr'
   gem 'webmock'
   gem 'factory_bot_rails'
+  gem 'pry'
+  gem 'faker'
 end
 
 group :development do
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem 'pry'
-  gem 'faker'
   gem 'rspec-rails'
-
 end
 
-  gem 'bcrypt', '~> 3.1.7'
-  gem 'faraday'
-  gem 'figaro'
+
+gem 'faraday'
+gem 'figaro'
