@@ -1,0 +1,51 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM&maxwidth=400&photo_reference=AUacShjNiBM4bKoq3ALL-0m7U8lf7n3-43gv8ZigJIIp5S4PdhY6nMOBOPWMDicKxd6nLPDAqjIGhAGBxX8FGaFShILJU97rEm6VvaVarlPesqjwAHCdljfn09KMIiY3WDVtdTixMFyUaAp5o_iqRhINZ5qavLdsXiKKFOdaSky7JBAABIEu
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Fri, 25 Aug 2023 21:24:44 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Location:
+      - https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '352'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=50
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
+        HREF=\"https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Fri, 25 Aug 2023 21:24:44 GMT
+recorded_with: VCR 6.2.0

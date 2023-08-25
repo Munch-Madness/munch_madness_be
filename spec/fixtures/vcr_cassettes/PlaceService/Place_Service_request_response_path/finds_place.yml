@@ -1,0 +1,52 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 25 Aug 2023 20:22:53 GMT
+      Expires:
+      - Fri, 25 Aug 2023 20:27:53 GMT
+      Cache-Control:
+      - public, max-age=300
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '650'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=443
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "{\n   \"candidates\" : \n   [\n      {\n         \"name\" : \"Crown
+        Burgers\",\n         \"photos\" : \n         [\n            {\n               \"height\"
+        : 3024,\n               \"html_attributions\" : \n               [\n                  \"\\u003ca
+        href=\\\"https://maps.google.com/maps/contrib/113899924754079514773\\\"\\u003eMatt
+        G\\u003c/a\\u003e\"\n               ],\n               \"photo_reference\"
+        : \"AUacShjNiBM4bKoq3ALL-0m7U8lf7n3-43gv8ZigJIIp5S4PdhY6nMOBOPWMDicKxd6nLPDAqjIGhAGBxX8FGaFShILJU97rEm6VvaVarlPesqjwAHCdljfn09KMIiY3WDVtdTixMFyUaAp5o_iqRhINZ5qavLdsXiKKFOdaSky7JBAABIEu\",\n
+        \              \"width\" : 4032\n            }\n         ]\n      }\n   ],\n
+        \  \"status\" : \"OK\"\n}"
+  recorded_at: Fri, 25 Aug 2023 20:22:52 GMT
+recorded_with: VCR 6.2.0
