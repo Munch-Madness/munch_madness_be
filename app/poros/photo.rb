@@ -1,6 +1,6 @@
-class Photo
-  attr_reader :photo
-  def initialize(photo)
-    @photo = photo
-  end
-end
+# class Photo
+#   attr_reader :photo
+#   def initialize(photo)
+#     @photo = photo
+#   end
+# end

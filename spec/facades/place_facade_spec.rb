@@ -3,8 +3,9 @@ require "rails_helper"
 RSpec.describe PlaceFacade do
   describe "Place Facade" do
     it "searches for a place", :vcr do
-      info = "crown burger"
-      place = PlaceFacade.new.find_place(info)
+      query = "crown burger"
+      place = PlaceFacade.new(query).find_place
+      
 
       expect(place).to be_a(Place)
       expect(place.id).to eq("null")
