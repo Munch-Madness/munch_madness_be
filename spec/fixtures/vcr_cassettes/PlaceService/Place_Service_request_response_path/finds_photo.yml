@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4
+    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM
     body:
       encoding: US-ASCII
       string: ''
@@ -21,9 +21,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 26 Aug 2023 17:32:30 GMT
+      - Sun, 27 Aug 2023 22:04:08 GMT
       Expires:
-      - Sat, 26 Aug 2023 17:37:30 GMT
+      - Sun, 27 Aug 2023 22:09:08 GMT
       Cache-Control:
       - public, max-age=300
       Server:
@@ -35,7 +35,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Server-Timing:
-      - gfet4t7; dur=390
+      - gfet4t7; dur=27
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
@@ -45,13 +45,13 @@ http_interactions:
         : 3024,\n               \"html_attributions\" : \n               [\n                  \"\\u003ca
         href=\\\"https://maps.google.com/maps/contrib/113899924754079514773\\\"\\u003eMatt
         G\\u003c/a\\u003e\"\n               ],\n               \"photo_reference\"
-        : \"AUacShiJQPleSXwIebpyhJUsP8jOBxLngcfLgKBc6PfUNi5TlaJbRAyrX6E6PTT3-VU9LNhsPZiqdyOknCrC4BI4ptQf_j_SmFtM2R65FJ-Dv80ZAYL9QkHIK-UvjjeKZAdATie-Tq-ILUtAUMYZCXZGDBD4nZHIQ3GMDit0qSNMYhHAszuw\",\n
+        : \"AUacShhMY_J1cKfCihRNtZakjch39qMDftSZYydlHHbzgAk-_3HT9nff0OwZH3MtvZiA6EZYohbniS6hqhfNeXd4B0gosUj90mT1xuWsKwjiQAZy5S0_mvfs5pRdLhLRoiFiYWnbVD-ESkYbc2DjyAvacKJc3t61Q45SWi1wZzARYWLQur4o\",\n
         \              \"width\" : 4032\n            }\n         ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}"
-  recorded_at: Sat, 26 Aug 2023 17:32:30 GMT
+  recorded_at: Sun, 27 Aug 2023 22:04:08 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShiJQPleSXwIebpyhJUsP8jOBxLngcfLgKBc6PfUNi5TlaJbRAyrX6E6PTT3-VU9LNhsPZiqdyOknCrC4BI4ptQf_j_SmFtM2R65FJ-Dv80ZAYL9QkHIK-UvjjeKZAdATie-Tq-ILUtAUMYZCXZGDBD4nZHIQ3GMDit0qSNMYhHAszuw
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM&maxwidth=400&photo_reference=AUacShhMY_J1cKfCihRNtZakjch39qMDftSZYydlHHbzgAk-_3HT9nff0OwZH3MtvZiA6EZYohbniS6hqhfNeXd4B0gosUj90mT1xuWsKwjiQAZy5S0_mvfs5pRdLhLRoiFiYWnbVD-ESkYbc2DjyAvacKJc3t61Q45SWi1wZzARYWLQur4o
     body:
       encoding: US-ASCII
       string: ''
@@ -68,7 +68,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Sat, 26 Aug 2023 17:32:31 GMT
+      - Sun, 27 Aug 2023 22:04:08 GMT
       Pragma:
       - no-cache
       Expires:
@@ -76,7 +76,7 @@ http_interactions:
       Cache-Control:
       - no-cache, must-revalidate
       Location:
-      - https://lh3.googleusercontent.com/places/ANJU3DuludbQiMipPRqm_ojX_TZOR1PRa16-JS7ejKS63U8_zBvKrW01iTI5Nh0Zor3wUq1Twn5ix-GnEPaaCYYVeCA-Ha-Q0Q4QzBk=s1600-w400
+      - https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400
       Content-Type:
       - text/html; charset=UTF-8
       Server:
@@ -88,13 +88,13 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Server-Timing:
-      - gfet4t7; dur=56
+      - gfet4t7; dur=51
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
       encoding: UTF-8
       string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
         Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
-        HREF=\"https://lh3.googleusercontent.com/places/ANJU3DuludbQiMipPRqm_ojX_TZOR1PRa16-JS7ejKS63U8_zBvKrW01iTI5Nh0Zor3wUq1Twn5ix-GnEPaaCYYVeCA-Ha-Q0Q4QzBk=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
-  recorded_at: Sat, 26 Aug 2023 17:32:31 GMT
+        HREF=\"https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Sun, 27 Aug 2023 22:04:08 GMT
 recorded_with: VCR 6.2.0

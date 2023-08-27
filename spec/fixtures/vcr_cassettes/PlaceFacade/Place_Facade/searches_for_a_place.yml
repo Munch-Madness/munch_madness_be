@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4
+    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM
     body:
       encoding: US-ASCII
       string: ''
@@ -18,6 +18,14 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 27 Aug 2023 22:14:01 GMT
+      Expires:
+      - Sun, 27 Aug 2023 22:19:01 GMT
+      Cache-Control:
+      - public, max-age=300
       Server:
       - scaffolding on HTTPServer2
       Content-Length:
@@ -26,18 +34,8 @@ http_interactions:
       - '0'
       X-Frame-Options:
       - SAMEORIGIN
-      Date:
-      - Fri, 25 Aug 2023 22:39:12 GMT
-      Expires:
-      - Fri, 25 Aug 2023 22:44:12 GMT
-      Cache-Control:
-      - public, max-age=300
-      Content-Type:
-      - application/json; charset=UTF-8
-      Age:
-      - '118'
       Server-Timing:
-      - gfet4t7; dur=2
+      - gfet4t7; dur=490
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
@@ -47,13 +45,13 @@ http_interactions:
         : 3024,\n               \"html_attributions\" : \n               [\n                  \"\\u003ca
         href=\\\"https://maps.google.com/maps/contrib/113899924754079514773\\\"\\u003eMatt
         G\\u003c/a\\u003e\"\n               ],\n               \"photo_reference\"
-        : \"AUacShi6r1YNohEc2Ct2DnrkCePOdvirU4H_nO2m0Z_DWhq7jX1RFqxG7n-nTpnBGQsfh_-1q98i3ZsZN0cWDVspH6sW3SUnylsAGQHAB4HTLIHhUT4_kFKPyO9SK2XYr0VurcDYlL3BNMlBID_szTsfMCyc-drkfXYFOzZBuTz-DLm_weo_\",\n
+        : \"AUacShjX1bxxUegHlhEKHerlqTCrSJSGDgzsEHJ-iHob_kPqEMtlzOnniNAleXazP0yfIO18xiZj6ljsihS7zq-tJhJBjcVcKfBMV7YuCYwGNOjyL37ABMXWs250_LzSMQgZuG03gJtkrms5Yv9nHe4jf_F-L_9Ee8x3GJxp3dAhS-iHdqZf\",\n
         \              \"width\" : 4032\n            }\n         ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}"
-  recorded_at: Fri, 25 Aug 2023 22:41:10 GMT
+  recorded_at: Sun, 27 Aug 2023 22:14:01 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShi6r1YNohEc2Ct2DnrkCePOdvirU4H_nO2m0Z_DWhq7jX1RFqxG7n-nTpnBGQsfh_-1q98i3ZsZN0cWDVspH6sW3SUnylsAGQHAB4HTLIHhUT4_kFKPyO9SK2XYr0VurcDYlL3BNMlBID_szTsfMCyc-drkfXYFOzZBuTz-DLm_weo_
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM&maxwidth=400&photo_reference=AUacShjX1bxxUegHlhEKHerlqTCrSJSGDgzsEHJ-iHob_kPqEMtlzOnniNAleXazP0yfIO18xiZj6ljsihS7zq-tJhJBjcVcKfBMV7YuCYwGNOjyL37ABMXWs250_LzSMQgZuG03gJtkrms5Yv9nHe4jf_F-L_9Ee8x3GJxp3dAhS-iHdqZf
     body:
       encoding: US-ASCII
       string: ''
@@ -70,7 +68,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Fri, 25 Aug 2023 22:41:10 GMT
+      - Sun, 27 Aug 2023 22:14:02 GMT
       Pragma:
       - no-cache
       Expires:
@@ -78,7 +76,7 @@ http_interactions:
       Cache-Control:
       - no-cache, must-revalidate
       Location:
-      - https://lh3.googleusercontent.com/places/ANJU3DuludbQiMipPRqm_ojX_TZOR1PRa16-JS7ejKS63U8_zBvKrW01iTI5Nh0Zor3wUq1Twn5ix-GnEPaaCYYVeCA-Ha-Q0Q4QzBk=s1600-w400
+      - https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400
       Content-Type:
       - text/html; charset=UTF-8
       Server:
@@ -90,13 +88,13 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Server-Timing:
-      - gfet4t7; dur=47
+      - gfet4t7; dur=65
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
       encoding: UTF-8
       string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
         Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
-        HREF=\"https://lh3.googleusercontent.com/places/ANJU3DuludbQiMipPRqm_ojX_TZOR1PRa16-JS7ejKS63U8_zBvKrW01iTI5Nh0Zor3wUq1Twn5ix-GnEPaaCYYVeCA-Ha-Q0Q4QzBk=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
-  recorded_at: Fri, 25 Aug 2023 22:41:10 GMT
+        HREF=\"https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Sun, 27 Aug 2023 22:14:01 GMT
 recorded_with: VCR 6.2.0

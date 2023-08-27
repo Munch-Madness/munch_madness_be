@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4
+    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM
     body:
       encoding: US-ASCII
       string: ''
@@ -21,9 +21,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 25 Aug 2023 23:07:39 GMT
+      - Sun, 27 Aug 2023 22:04:08 GMT
       Expires:
-      - Fri, 25 Aug 2023 23:12:39 GMT
+      - Sun, 27 Aug 2023 22:09:08 GMT
       Cache-Control:
       - public, max-age=300
       Server:
@@ -35,7 +35,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Server-Timing:
-      - gfet4t7; dur=378
+      - gfet4t7; dur=417
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
@@ -45,8 +45,8 @@ http_interactions:
         : 3024,\n               \"html_attributions\" : \n               [\n                  \"\\u003ca
         href=\\\"https://maps.google.com/maps/contrib/113899924754079514773\\\"\\u003eMatt
         G\\u003c/a\\u003e\"\n               ],\n               \"photo_reference\"
-        : \"AUacShiR8mEDiiYnSnmTa6ShyNutzIH3hMJvzQ8kEt7i-qSWqbJhhOSG13heahXe6kI4mrFpgMYeMWCscppsrPY1TEbeYo3gFQ6PrWakCFPMD3VA7oc8KPTZ3vLvsVoFM4RvIWD9dnNTxyeacf48zB9HKE9scvllaq8TUQbr3gHwpxVIjhfC\",\n
+        : \"AUacShgopM1-NrSLa3ToXVeP84vSegTDBie8W6pDvizXHdruzb8L-fsXR86SLhuPVd8oxIA7IGVSoFr2fodbpIqrMI2dVt0uxVaKx5OIHciu0uQ7WrRmvDaQNwzTkI5RI-V8YDb34iSXpYOXeY_1RW0LP98lv3sBL0JkDlBN5rSRdpL4JX9j\",\n
         \              \"width\" : 4032\n            }\n         ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}"
-  recorded_at: Fri, 25 Aug 2023 23:07:39 GMT
+  recorded_at: Sun, 27 Aug 2023 22:04:07 GMT
 recorded_with: VCR 6.2.0

@@ -7,10 +7,6 @@ class PlaceFacade
     PlaceService.new
   end
 
-  # def photo_service
-  #   PhotoService.new
-  # end
-
   def find_place
     place = place_service.find_place(@query)
     place_ref = place[:candidates].first[:photos].first[:photo_reference]
