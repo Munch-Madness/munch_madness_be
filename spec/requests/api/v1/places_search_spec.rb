@@ -4,8 +4,7 @@ RSpec.describe "Get Place Endpoint" do
   describe "Place Service request response path" do
     it "finds place based on user query input", :vcr do
       query = "crown burger"
-      get "/api/v1/places", params: { query: query }
-
+      get "/api/v1/places/search", params: { query: query }
       place_data = JSON.parse(response.body, symbolize_names: true)
       expect(response).to be_successful
       expect(response.status).to eq(200)
@@ -33,10 +32,12 @@ RSpec.describe "Get Place Endpoint" do
 
     it 'returns an error if no place is found', :vcr do
       query = "xxxxxxxxxxxxxx"
-      get "/api/v1/places", params: { query: query }
+      get "/api/v1/places/search", params: { query: query }
       expect(response).to_not be_successful
       expect(response.status).to eq 404
       expect(response.body).to eq "no restaurants located with search query"
+    end
+
     it "returns a list of random restaurants", :vcr do
       query = "80020"
       get "/api/v1/places", params: { query: query, search: "random" }
