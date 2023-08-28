@@ -35,8 +35,16 @@ RSpec.describe PlaceService do
       })
 
       restaurants = PlaceService.new.random_restaurants(location)
-      require 'pry'; binding.pry
-      #using pry, restaurants = {:html_attributions=>[], :results=>[], :status=>"ZERO_RESULTS"}
+
+      expect(restaurants).to be_a(Hash)
+      expect(restaurants).to have_key(:results)
+      expect(restaurants[:results]).to be_an(Array)
+      expect(restaurants[:results].count).to eq(20)
+
+      expect(restaurants[:photos].first).to be_a(Hash)
+      expect(restaurants[:photos].first).to have_key(:photo_reference)
+      expect(restaurants[:photos].first[:photo_reference]).to be_a(String)
+      # require 'pry'; binding.pry
     end
   end
 end
