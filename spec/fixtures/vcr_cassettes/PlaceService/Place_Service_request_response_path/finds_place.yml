@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyDkVMmok7p2YxezljQgnvQh7nkMZTgvuEM
+    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=crown%20burger&inputtype=textquery&key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4
     body:
       encoding: US-ASCII
       string: ''
@@ -18,14 +18,6 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - application/json; charset=UTF-8
-      Date:
-      - Sun, 27 Aug 2023 22:04:08 GMT
-      Expires:
-      - Sun, 27 Aug 2023 22:09:08 GMT
-      Cache-Control:
-      - public, max-age=300
       Server:
       - scaffolding on HTTPServer2
       Content-Length:
@@ -34,8 +26,18 @@ http_interactions:
       - '0'
       X-Frame-Options:
       - SAMEORIGIN
+      Date:
+      - Mon, 28 Aug 2023 03:51:25 GMT
+      Expires:
+      - Mon, 28 Aug 2023 03:56:25 GMT
+      Cache-Control:
+      - public, max-age=300
+      Content-Type:
+      - application/json; charset=UTF-8
+      Age:
+      - '1'
       Server-Timing:
-      - gfet4t7; dur=417
+      - gfet4t7; dur=0
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
@@ -45,8 +47,8 @@ http_interactions:
         : 3024,\n               \"html_attributions\" : \n               [\n                  \"\\u003ca
         href=\\\"https://maps.google.com/maps/contrib/113899924754079514773\\\"\\u003eMatt
         G\\u003c/a\\u003e\"\n               ],\n               \"photo_reference\"
-        : \"AUacShgopM1-NrSLa3ToXVeP84vSegTDBie8W6pDvizXHdruzb8L-fsXR86SLhuPVd8oxIA7IGVSoFr2fodbpIqrMI2dVt0uxVaKx5OIHciu0uQ7WrRmvDaQNwzTkI5RI-V8YDb34iSXpYOXeY_1RW0LP98lv3sBL0JkDlBN5rSRdpL4JX9j\",\n
+        : \"AUacShjGxZaCiGyiLtmjTVFHxzKCLfkhLTvgems2Tt8fY3cAFlrSrpA5evzQNTU_GTe2HQgZKIGQxFqGO-vZALLPDv_BMNr-Pit4yYmfq7B5TJDzEXbeVe7Zl-WWIoBMKJwr7mu9RO16B6NB2S_DS0sgj-3YQjlcUy7f3VFQGeNbn1EcPhgl\",\n
         \              \"width\" : 4032\n            }\n         ]\n      }\n   ],\n
         \  \"status\" : \"OK\"\n}"
-  recorded_at: Sun, 27 Aug 2023 22:04:07 GMT
+  recorded_at: Mon, 28 Aug 2023 03:51:26 GMT
 recorded_with: VCR 6.2.0

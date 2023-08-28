@@ -19,4 +19,9 @@ class PlaceService
     url = "/maps/api/place/photo?maxwidth=400&photo_reference=#{photo_ref}&key=#{key}"
     conn.get(url)
   end
+
+  def random_restaurants(location)
+    key = ENV["rest_key"]
+    get_url("/maps/api/place/nearbysearch/json?location=#{location.latitude},#{location.latitude}&radius=1500&type=restaurant&key=#{key}")
+  end
 end
