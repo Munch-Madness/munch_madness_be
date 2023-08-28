@@ -37,6 +37,34 @@ RSpec.describe "Get Place Endpoint" do
       expect(response).to_not be_successful
       expect(response.status).to eq 404
       expect(response.body).to eq "no restaurants located with search query"
+    it "returns a list of random restaurants", :vcr do
+      query = "80020"
+      get "/api/v1/places", params: { query: query, search: "random" }
+
+      place_data = JSON.parse(response.body, symbolize_names: true)
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+
+      expect(place_data).to be_a(Hash)
+      expect(place_data).to have_key(:data)
+
+      expect(place_data[:data]).to be_an(Array)
+      expect(place_data[:data].count).to eq(20)
+      
+      expect(place_data[:data][0]).to have_key(:id)
+      expect(place_data[:data][0][:id]).to be_a(String)
+
+      expect(place_data[:data][0]).to have_key(:type)
+      expect(place_data[:data][0][:type]).to be_a(String)
+      
+      expect(place_data[:data][0]).to have_key(:attributes)
+      expect(place_data[:data][0][:attributes]).to be_a(Hash)
+      
+      expect(place_data[:data][0][:attributes]).to have_key(:name)
+      expect(place_data[:data][0][:attributes][:name]).to be_a(String)
+      
+      expect(place_data[:data][0][:attributes]).to have_key(:photo)
+      expect(place_data[:data][0][:attributes][:photo]).to be_a(String)
     end
   end
 end

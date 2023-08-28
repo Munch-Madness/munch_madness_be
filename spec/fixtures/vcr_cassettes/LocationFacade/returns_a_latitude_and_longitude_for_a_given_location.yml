@@ -21,7 +21,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Mon, 28 Aug 2023 21:00:09 GMT
+      - Mon, 28 Aug 2023 21:59:49 GMT
       Pragma:
       - no-cache
       Expires:
@@ -43,7 +43,7 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Server-Timing:
-      - gfet4t7; dur=86
+      - gfet4t7; dur=51
       Alt-Svc:
       - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
     body:
@@ -79,5 +79,5 @@ http_interactions:
         View\",\n            \"Wheat Ridge\"\n         ],\n         \"types\" : \n
         \        [\n            \"postal_code\"\n         ]\n      }\n   ],\n   \"status\"
         : \"OK\"\n}"
-  recorded_at: Mon, 28 Aug 2023 21:00:09 GMT
+  recorded_at: Mon, 28 Aug 2023 21:59:49 GMT
 recorded_with: VCR 6.2.0
