@@ -30,5 +30,12 @@ RSpec.describe "Get Place Endpoint" do
       expect(place_data[:data][:attributes]).to have_key(:photo)
       expect(place_data[:data][:attributes][:photo]).to be_a(String)
     end
+
+    it 'returns an error if no place is found', :vcr do
+      query = "xxxxxxxxxxxxxx"
+      get "/api/v1/places", params: { query: query }
+      place_data = JSON.parse(response.body, symbolize_names: true)
+      require 'pry'; binding.pry
+    end
   end
 end
