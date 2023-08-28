@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/geocode/json?address=80020&key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4
+    uri: https://maps.googleapis.com/maps/api/geocode/json?address=80020&key=google_key
     body:
       encoding: US-ASCII
       string: ''
@@ -81,7 +81,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:52 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&location=39.93891989999999,-105.0674317&radius=50000&type=restaurant
+    uri: https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=google_key&location=39.93891989999999,-105.0674317&radius=50000&type=restaurant
     body:
       encoding: US-ASCII
       string: ''
@@ -126,7 +126,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:52 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShiGeYppsE-_noxyvBu6Vtp0hNHfCzAGPWlCSbgYB7zzhB9W4dmK5iTVpMX6ObUzR2mypsxGnbrTvs4NV6JgMicB1C_BvubuNsSymot5e3WMfa5Gsd-8xgNp23q21EkUtl6BweRqRvu7shcV3rwl_aDWG32dnBZTOi4VvRXQvSrhJNlp
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShiGeYppsE-_noxyvBu6Vtp0hNHfCzAGPWlCSbgYB7zzhB9W4dmK5iTVpMX6ObUzR2mypsxGnbrTvs4NV6JgMicB1C_BvubuNsSymot5e3WMfa5Gsd-8xgNp23q21EkUtl6BweRqRvu7shcV3rwl_aDWG32dnBZTOi4VvRXQvSrhJNlp
     body:
       encoding: US-ASCII
       string: ''
@@ -174,7 +174,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShha9TUmxhcms4EYVP3UgueLzJEXt3MIWID7crfSwiotC-TQdXsu39JjEt5hlxb_M2S9nBwBx2t5WGStZ0tazYZyzcfbfFRjboXSMEgaWHtdcjO_LALuPAU4ugjTpw0TajaX1XGB-MRVCizmF_lQ8_SEeJ4RxUFycCsAqQT8N88Mk7ti
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShha9TUmxhcms4EYVP3UgueLzJEXt3MIWID7crfSwiotC-TQdXsu39JjEt5hlxb_M2S9nBwBx2t5WGStZ0tazYZyzcfbfFRjboXSMEgaWHtdcjO_LALuPAU4ugjTpw0TajaX1XGB-MRVCizmF_lQ8_SEeJ4RxUFycCsAqQT8N88Mk7ti
     body:
       encoding: US-ASCII
       string: ''
@@ -222,7 +222,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShhBndim7CEUUuUgDTwuwoXvtgeJVvFiEbkcp_goU6myx8bGm2QIIiKVyzosFpdHBAlJWrI6rsppyKJd-e_oPBTnYu9l0SGsStL3FEThLlABhPh1N19G4GI0CsLlWbL7R-EcgdS1szMj91mw7fPYBsX-pYKhxP0DwYRdV5Wd8RYtsIdC
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShhBndim7CEUUuUgDTwuwoXvtgeJVvFiEbkcp_goU6myx8bGm2QIIiKVyzosFpdHBAlJWrI6rsppyKJd-e_oPBTnYu9l0SGsStL3FEThLlABhPh1N19G4GI0CsLlWbL7R-EcgdS1szMj91mw7fPYBsX-pYKhxP0DwYRdV5Wd8RYtsIdC
     body:
       encoding: US-ASCII
       string: ''
@@ -270,7 +270,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShg2w5X5LzVLuZ6bmxuzQbY90QBH-Z01JFl-ivv2Qmxe2i30qfo8V04YjJVMC6XWUbRUWYr-08dFmqzl189jRGrf3PtO4aESve1zz5BQFywTpQk9lr1NrwtO0OU27Xljl932BNUzpZwHRt3dtPH_x8Jbf7bkvAezpmTDT1iCXksn4eMi
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShg2w5X5LzVLuZ6bmxuzQbY90QBH-Z01JFl-ivv2Qmxe2i30qfo8V04YjJVMC6XWUbRUWYr-08dFmqzl189jRGrf3PtO4aESve1zz5BQFywTpQk9lr1NrwtO0OU27Xljl932BNUzpZwHRt3dtPH_x8Jbf7bkvAezpmTDT1iCXksn4eMi
     body:
       encoding: US-ASCII
       string: ''
@@ -318,7 +318,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShg63QuJOdVFotf5rLtc73Wl5ifmLKtyDrBW0rh3zGV_pU29oqasmXoi0QoRnfCHUg18_HXS079-3BTvyKDjuquMrgHlgqSCrbVpRPXr83LeZ5S7SWwsOTgprh6BwEJGrJ6DNdiaPawLm0GU7-colK1-rFeHZ-ZG3CJr1PPc5qcmsQQ6
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShg63QuJOdVFotf5rLtc73Wl5ifmLKtyDrBW0rh3zGV_pU29oqasmXoi0QoRnfCHUg18_HXS079-3BTvyKDjuquMrgHlgqSCrbVpRPXr83LeZ5S7SWwsOTgprh6BwEJGrJ6DNdiaPawLm0GU7-colK1-rFeHZ-ZG3CJr1PPc5qcmsQQ6
     body:
       encoding: US-ASCII
       string: ''
@@ -366,7 +366,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShjtk_mByXQJfxX4E3VFFaGyemLTSJ3jKF5p5jFXp4b-p99pHur4TSvAQ8LJdDxc4lPmwURq3inKsDpBp9CwvEP5UZ1exAyX0K23bHQ306cRPL6O9bzef1YchSp1gT56z915juaKwxA2KvKkiwD9s_vqKvkmvsFsLEUbjxHv1YL1Pq4N
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShjtk_mByXQJfxX4E3VFFaGyemLTSJ3jKF5p5jFXp4b-p99pHur4TSvAQ8LJdDxc4lPmwURq3inKsDpBp9CwvEP5UZ1exAyX0K23bHQ306cRPL6O9bzef1YchSp1gT56z915juaKwxA2KvKkiwD9s_vqKvkmvsFsLEUbjxHv1YL1Pq4N
     body:
       encoding: US-ASCII
       string: ''
@@ -414,7 +414,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShjk_0mGERg3ajHHoW3pmAukUVFLE6ZUuP8dkbKcrYUAwUbdXOInS2irejz0wATCpxMJAS7POVt6COcAkmuCABGSDO3ZRwLL9HatgoSnHyjfnoVYK17QCfDKH9dls9TAWUmp0w1UhXhObafrxwiYoomB6vuTzjwJKMYm7tygj808IcCJ
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShjk_0mGERg3ajHHoW3pmAukUVFLE6ZUuP8dkbKcrYUAwUbdXOInS2irejz0wATCpxMJAS7POVt6COcAkmuCABGSDO3ZRwLL9HatgoSnHyjfnoVYK17QCfDKH9dls9TAWUmp0w1UhXhObafrxwiYoomB6vuTzjwJKMYm7tygj808IcCJ
     body:
       encoding: US-ASCII
       string: ''
@@ -462,7 +462,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShh1U8E1HImER0TFlSPREszLJgbQJHeRxqAnNot64_Ecpr3WM7dgpFzHPNby6ICCDzs7XXIpgCfezU0GCYY1KYq320fX4hM-nF4Kc7JR_0DsmpwpK18Kw8S4EiOhKghjAUXb7IgKMSo5uDapfNLeX9jkFZD0L64y4Ta6SZQoUpRZwOnW
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShh1U8E1HImER0TFlSPREszLJgbQJHeRxqAnNot64_Ecpr3WM7dgpFzHPNby6ICCDzs7XXIpgCfezU0GCYY1KYq320fX4hM-nF4Kc7JR_0DsmpwpK18Kw8S4EiOhKghjAUXb7IgKMSo5uDapfNLeX9jkFZD0L64y4Ta6SZQoUpRZwOnW
     body:
       encoding: US-ASCII
       string: ''
@@ -510,7 +510,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShiBv1zSs69anXPcZ1j0b--vKI--w11fEu4O7ikfPIWbs8KOWf1rUX9fouLhYMtMmH1aZE1DWwG_8uAXNHc3geJmYyiF-DIxAVdXw9T2Rw2y9JB4M2ryp6eg-4oqt31vtYDd40Ib0XFN17M6jI9ACp4mK1FjJa95vXgKtUy_XTrPVCyQ
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShiBv1zSs69anXPcZ1j0b--vKI--w11fEu4O7ikfPIWbs8KOWf1rUX9fouLhYMtMmH1aZE1DWwG_8uAXNHc3geJmYyiF-DIxAVdXw9T2Rw2y9JB4M2ryp6eg-4oqt31vtYDd40Ib0XFN17M6jI9ACp4mK1FjJa95vXgKtUy_XTrPVCyQ
     body:
       encoding: US-ASCII
       string: ''
@@ -558,7 +558,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShiCcKhP7CwuKjTnOqEi6-lXXiOpSydtVEoPxc2BpIOKp4iKZDKiXfbWLSoVaoY9NZ12jivyuOdM24QRbLiaBn9iIq-DuVzcZE2UrUgZH-_gBg7fSNnRRjjpk_p3LALrqmpqavtgi6v_AyQu3TrPPUU2qzLS7RPNSCvSgkDc3N-VfTvS
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShiCcKhP7CwuKjTnOqEi6-lXXiOpSydtVEoPxc2BpIOKp4iKZDKiXfbWLSoVaoY9NZ12jivyuOdM24QRbLiaBn9iIq-DuVzcZE2UrUgZH-_gBg7fSNnRRjjpk_p3LALrqmpqavtgi6v_AyQu3TrPPUU2qzLS7RPNSCvSgkDc3N-VfTvS
     body:
       encoding: US-ASCII
       string: ''
@@ -606,7 +606,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:53 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShgUqvEbvDHGpvS91LQ8MYwYd8OS7EjeKk1zDf2hK-Blz9EMow62etl7M_5V8M4GDWrWpyekB49LK9NB4C95G9rCBxt89LT-ykRH4-d4KRXxYcYIgH1JmiAHyUVYrsWmCE3L9LhcyJ_MZ9-ZaQ8WEaKJ25WvxmF8drbfs24wjugAV05D
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShgUqvEbvDHGpvS91LQ8MYwYd8OS7EjeKk1zDf2hK-Blz9EMow62etl7M_5V8M4GDWrWpyekB49LK9NB4C95G9rCBxt89LT-ykRH4-d4KRXxYcYIgH1JmiAHyUVYrsWmCE3L9LhcyJ_MZ9-ZaQ8WEaKJ25WvxmF8drbfs24wjugAV05D
     body:
       encoding: US-ASCII
       string: ''
@@ -654,7 +654,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShjnUIH2oi1z-75NxRBepv3OdHFvLmPCYaNmeUWbWDvoQiIPHUewAAEkqWQi7VMR7Tx2VwPntJBrZUhNLM4bjnbWrMea6O7vpJ2JfJIjFhkVmSDfDnDG8x5ptHiLJeEVy_rmhvMdWML-KHSgh1_zNazZx84CBgcyeM9myw0FImPa-E7B
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShjnUIH2oi1z-75NxRBepv3OdHFvLmPCYaNmeUWbWDvoQiIPHUewAAEkqWQi7VMR7Tx2VwPntJBrZUhNLM4bjnbWrMea6O7vpJ2JfJIjFhkVmSDfDnDG8x5ptHiLJeEVy_rmhvMdWML-KHSgh1_zNazZx84CBgcyeM9myw0FImPa-E7B
     body:
       encoding: US-ASCII
       string: ''
@@ -702,7 +702,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShih6BwlFFkn62nvT7RGKMQI43uewjFLpdQKfL2qEXdHIF1gNHDEH2jemYM1Q0aKBtgRpVCKoGvn85_80LGbYf1nibkRnEt5_n-Rq9T5fvTlGPulKkoeZj47SuCzcwMYCPHJfv20p8RYCwqa9aFoN5M8r5I54s2QwEu1WK0TnBH4doqj
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShih6BwlFFkn62nvT7RGKMQI43uewjFLpdQKfL2qEXdHIF1gNHDEH2jemYM1Q0aKBtgRpVCKoGvn85_80LGbYf1nibkRnEt5_n-Rq9T5fvTlGPulKkoeZj47SuCzcwMYCPHJfv20p8RYCwqa9aFoN5M8r5I54s2QwEu1WK0TnBH4doqj
     body:
       encoding: US-ASCII
       string: ''
@@ -750,7 +750,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShjl7w5JStQRozB-I32uvX_u8vSezXA1RtV2DCNnb5IVMPVLASOt1mj_94VvBCYgziHj57lwEr_Hi_ihlYSPTonPOyHrvzBFeH6coAa-AF_6NwKlmawFf7USSzxtfPeRfFv0tsMQAnZFH9KXKKX4HuB03rPIrRUQEwvN5RDFX-IoSpt0
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShjl7w5JStQRozB-I32uvX_u8vSezXA1RtV2DCNnb5IVMPVLASOt1mj_94VvBCYgziHj57lwEr_Hi_ihlYSPTonPOyHrvzBFeH6coAa-AF_6NwKlmawFf7USSzxtfPeRfFv0tsMQAnZFH9KXKKX4HuB03rPIrRUQEwvN5RDFX-IoSpt0
     body:
       encoding: US-ASCII
       string: ''
@@ -798,7 +798,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShiRh1SAndjSB5SYtW5RRmAXezyPgznK9M2dRFtcQNbq_6wJjMTaNfc1xtKuuWN-XiD7dfaJ9V50BSqDqbPngt4fER_rfMKDK9I0xZXbSMc7aaU8FwVO5NgtAm7JqLOrivOIWC3Hd2FNPWLG4gfYLYmWInHlgNkS6PcPVU8OWwdnSbib
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShiRh1SAndjSB5SYtW5RRmAXezyPgznK9M2dRFtcQNbq_6wJjMTaNfc1xtKuuWN-XiD7dfaJ9V50BSqDqbPngt4fER_rfMKDK9I0xZXbSMc7aaU8FwVO5NgtAm7JqLOrivOIWC3Hd2FNPWLG4gfYLYmWInHlgNkS6PcPVU8OWwdnSbib
     body:
       encoding: US-ASCII
       string: ''
@@ -846,7 +846,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShgiCq5RKTVC4lgqR_sxLQ8Y8o1Hhg0m-vBeIAjAl0GRCZzoM5krz0QD6b2Y0CD6j4wgxKHijwEQ309wuJeggBNL-nmThOo6xTLArAbFIJIDX8oQqnOu8hStCDhPPdMCW7btTiAVFvEbvnSdjSRpm_-Djk7vxXIVEgjU3rW8LWZbsIuY
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShgiCq5RKTVC4lgqR_sxLQ8Y8o1Hhg0m-vBeIAjAl0GRCZzoM5krz0QD6b2Y0CD6j4wgxKHijwEQ309wuJeggBNL-nmThOo6xTLArAbFIJIDX8oQqnOu8hStCDhPPdMCW7btTiAVFvEbvnSdjSRpm_-Djk7vxXIVEgjU3rW8LWZbsIuY
     body:
       encoding: US-ASCII
       string: ''
@@ -894,7 +894,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShhPqFyUbETSKjSAuf1yXxlgIt6C26me1w0VnUKQC9e-Cp3GblNhKmFFiBCD6Ga48wp724avgZNQDMpEgyEgf3mF_b_j6HoZtoZCR2bgipAIEVn5Fbv-ryfT_YZ9Xtr0bcpezXr-85CNLvx9HpXWhAIsRkJipdej_ezl-6Mk8Jjj608
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShhPqFyUbETSKjSAuf1yXxlgIt6C26me1w0VnUKQC9e-Cp3GblNhKmFFiBCD6Ga48wp724avgZNQDMpEgyEgf3mF_b_j6HoZtoZCR2bgipAIEVn5Fbv-ryfT_YZ9Xtr0bcpezXr-85CNLvx9HpXWhAIsRkJipdej_ezl-6Mk8Jjj608
     body:
       encoding: US-ASCII
       string: ''
@@ -942,7 +942,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShh8eyAy2QHNiA5mMLpVGuiXGpCwptZWteBT-4MDqc4GIRnjiMf-9_K80gYtRmxsyBflgfqQTSClzefpHNfcJUT8qkfzZrpxFQo9QwajeKXX1G2kRoZg_dOjqdJjert4z-V6THGHFYx8_Eaz52VBwfD5ZS-6e5s2Pc514ZhFLEF-w69_
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShh8eyAy2QHNiA5mMLpVGuiXGpCwptZWteBT-4MDqc4GIRnjiMf-9_K80gYtRmxsyBflgfqQTSClzefpHNfcJUT8qkfzZrpxFQo9QwajeKXX1G2kRoZg_dOjqdJjert4z-V6THGHFYx8_Eaz52VBwfD5ZS-6e5s2Pc514ZhFLEF-w69_
     body:
       encoding: US-ASCII
       string: ''
@@ -990,7 +990,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShh4pyuMYkLQ0d9TPlfSmBeyAOrxrwBzdr5hAMLiwV-FPkzr64gHh1gvw4yujXhyUUsNL56AklrmYa-AWLKCa4lSdVixhpj8rlCkHF52_hsT_-3mklfs7h6cd1X2TG0i2_yoVZ3bNKpMBFraUElovkp6lFwQNJ0SZ7SEYqCpUJMPo7Dj
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShh4pyuMYkLQ0d9TPlfSmBeyAOrxrwBzdr5hAMLiwV-FPkzr64gHh1gvw4yujXhyUUsNL56AklrmYa-AWLKCa4lSdVixhpj8rlCkHF52_hsT_-3mklfs7h6cd1X2TG0i2_yoVZ3bNKpMBFraUElovkp6lFwQNJ0SZ7SEYqCpUJMPo7Dj
     body:
       encoding: US-ASCII
       string: ''
@@ -1038,7 +1038,7 @@ http_interactions:
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
 - request:
     method: get
-    uri: https://maps.googleapis.com/maps/api/place/photo?key=AIzaSyCC7f6w-PndtB1YiBTT-fXstWa0qKB22f4&maxwidth=400&photo_reference=AUacShi75o82mf2ZazpLn0rFu-omHlTjGz4V_laZ5mwkrtQTYjnQqGAYiOQ0Ltqi4P0putJ81WpXNedsSwsg2urmPUh1VXEP-HLdDAEg2--DEb4EHwJ1LUQ7QTfIhVkR_DZixVwM1zxPTHkalQo3aelmJIs58qpuKV2hts_B18wkiIdadvq1
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShi75o82mf2ZazpLn0rFu-omHlTjGz4V_laZ5mwkrtQTYjnQqGAYiOQ0Ltqi4P0putJ81WpXNedsSwsg2urmPUh1VXEP-HLdDAEg2--DEb4EHwJ1LUQ7QTfIhVkR_DZixVwM1zxPTHkalQo3aelmJIs58qpuKV2hts_B18wkiIdadvq1
     body:
       encoding: US-ASCII
       string: ''
@@ -1084,4 +1084,47 @@ http_interactions:
         Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
         HREF=\"https://lh3.googleusercontent.com/places/ANJU3Dsco7rnG6x3pugAOalKb4uu1hvq9DFlN2YgyRhEoDEjsLfTuJMRPofdOlOLzL569vNxIyHvAlz1UwRykl60d-O_epn90A8pHXU=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
   recorded_at: Mon, 28 Aug 2023 21:59:54 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo&input=80020&inputtype=textquery&key=google_key
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 28 Aug 2023 22:30:27 GMT
+      Expires:
+      - Mon, 28 Aug 2023 22:35:27 GMT
+      Cache-Control:
+      - public, max-age=300
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '110'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=243
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "{\n   \"candidates\" : \n   [\n      {\n         \"name\" : \"Westminster,
+        CO 80020\"\n      }\n   ],\n   \"status\" : \"OK\"\n}"
+  recorded_at: Mon, 28 Aug 2023 22:30:27 GMT
 recorded_with: VCR 6.2.0
