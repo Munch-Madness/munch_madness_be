@@ -37,4 +37,25 @@ Munch Madness gamifies the process of deciding where to eat or order takeout. Us
 
 # API JSON CONTRACT
 
-Description of API endpoints for front end application (coming soon!)
+Description of API endpoints for front end application
+
+## GETting places
+
+`GET /api/v1/places`
+
+Success Response (200 OK):
+
+- Status: 200 OK
+- Description: Successful response with a specific place's name and photo based on a users input query.
+- Data Format: A data hash, with keys "id", "type" and "attributes".
+```json
+{
+  "data": {
+    "id": "null",
+    "type": "place",
+    "attributes": {
+      "name": "Crown Burgers",
+      "photo": "https://lh3.googleusercontent.com/places/ANJU3DuludbQiMipPRqm_ojX_TZOR1PRa16-JS7ejKS63U8_zBvKrW01iTI5Nh0Zor3wUq1Twn5ix-GnEPaaCYYVeCA-Ha-Q0Q4QzBk=s1600-w400"
+    }
+  }
+}

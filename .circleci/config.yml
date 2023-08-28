@@ -11,12 +11,13 @@ jobs: # a collection of steps
           BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
-          # PGUSER: postgres
+          PGUSER: postgres
           RAILS_ENV: test
-      # - image: circleci/postgres:11 # database image
-        # environment: # environment variables for database, it is kind of obvious but it is important that they match with your test config in database.yml
-          # POSTGRES_USER: postgres
-          # POSTGRES_DB: munch_madness_be_test
+      - image: circleci/postgres:11 # database image
+        environment: # environment variables for database, it is kind of obvious but it is important that they match with your test config in database.yml
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: <%= ENV["MUNCH_MADNESS_BE_DATABASE_PASSWORD"] %>
+          POSTGRES_DB: munch_madness_be_test
     steps: # a collection of executable commands
       - checkout # special step to check out source code to working directory
       # Which version of bundler?
@@ -32,12 +33,12 @@ jobs: # a collection of steps
       - run:
           name: Bundle Install
           command: bundle install
-      # - run:
-      #     name: Wait for DB
-      #     command: dockerize -wait tcp://localhost:5432 -timeout 1m
-      # - run:
-      #     name: Database setup
-      #     command: bin/rails db:{create,migrate} --trace
+      - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://localhost:5432 -timeout 1m
+      - run:
+          name: Database setup
+          command: bin/rails db:{create,migrate} --trace
       - run:
           name: Run rspec in parallel
           command: bundle exec rspec
