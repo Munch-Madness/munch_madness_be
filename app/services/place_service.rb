@@ -10,6 +10,7 @@ class PlaceService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  
   def find_place(info)
     get_url("/maps/api/place/findplacefromtext/json?input=#{info}&inputtype=textquery&fields=name,photo&key=#{ENV["rest_key"]}")
   end
