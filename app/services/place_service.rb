@@ -21,8 +21,7 @@ class PlaceService
   end
 
   def random_restaurants(location)
-    # require 'pry'; binding.pry
     key = ENV["rest_key"]
-    get_url("/maps/api/place/nearbysearch/json?location=#{location.latitude.to_f},#{location.longitude.to_f}&radius=1500&type=restaurant&key=#{key}")
+    get_url("/maps/api/place/nearbysearch/json?location=#{location.latitude.to_f},#{location.longitude.to_f}&radius=50000&type=restaurant&key=#{key}")
   end
 end
