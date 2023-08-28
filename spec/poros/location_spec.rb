@@ -7,10 +7,6 @@ RSpec.describe Location do
         :geometry=> {
           :location=> {
             :lat=>"43.653226",
-      # }}],
-      # :results=> [
-      #   :geometry=> {
-      #     :location=> {
             :lng=>"79.3831843",
       }}]
     }
