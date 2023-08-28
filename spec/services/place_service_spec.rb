@@ -40,11 +40,12 @@ RSpec.describe PlaceService do
       expect(restaurants).to have_key(:results)
       expect(restaurants[:results]).to be_an(Array)
       expect(restaurants[:results].count).to eq(20)
-
-      expect(restaurants[:photos].first).to be_a(Hash)
-      expect(restaurants[:photos].first).to have_key(:photo_reference)
-      expect(restaurants[:photos].first[:photo_reference]).to be_a(String)
-      # require 'pry'; binding.pry
+      expect(restaurants[:results][0]).to have_key(:name)
+      expect(restaurants[:results][0]).to be_a(Hash)
+      expect(restaurants[:results][0]).to have_key(:photos)
+      expect(restaurants[:results][0][:photos]).to be_an(Array)
+      expect(restaurants[:results][0][:photos][0]).to have_key(:photo_reference)
+      expect(restaurants[:results][0][:photos][0][:photo_reference]).to be_a(String)
     end
   end
 end
