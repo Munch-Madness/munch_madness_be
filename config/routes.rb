@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get "/places", to: "places#index"
+      get "/places/search", to: "places#search"
     end
   end
 end

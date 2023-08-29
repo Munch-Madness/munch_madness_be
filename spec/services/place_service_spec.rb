@@ -23,6 +23,30 @@ RSpec.describe PlaceService do
 
       expect(photo_serv.env[:response_headers][:location]).to be_a(String)
     end
+
+    it "returns random restaurants", :vcr do
+      location = Location.new(data = {
+        :results=> [
+          :geometry=> {
+            :location=> {
+              :lat=>"39.7752563",
+              :lng=>"-105.0498966",
+        }}]
+      })
+
+      restaurants = PlaceService.new.random_restaurants(location)
+
+      expect(restaurants).to be_a(Hash)
+      expect(restaurants).to have_key(:results)
+      expect(restaurants[:results]).to be_an(Array)
+      expect(restaurants[:results].count).to eq(20)
+      expect(restaurants[:results][0]).to have_key(:name)
+      expect(restaurants[:results][0]).to be_a(Hash)
+      expect(restaurants[:results][0]).to have_key(:photos)
+      expect(restaurants[:results][0][:photos]).to be_an(Array)
+      expect(restaurants[:results][0][:photos][0]).to have_key(:photo_reference)
+      expect(restaurants[:results][0][:photos][0][:photo_reference]).to be_a(String)
+    end
   end
 end
   

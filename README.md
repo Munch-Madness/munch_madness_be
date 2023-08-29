@@ -39,9 +39,9 @@ Munch Madness gamifies the process of deciding where to eat or order takeout. Us
 
 Description of API endpoints for front end application
 
-## GETting places
+## GETting a place via query parameter
 
-`GET /api/v1/places`
+`GET /api/v1/places/search`
 
 Success Response (200 OK):
 
@@ -57,5 +57,19 @@ Success Response (200 OK):
       "name": "Crown Burgers",
       "photo": "https://lh3.googleusercontent.com/places/ANJU3DuludbQiMipPRqm_ojX_TZOR1PRa16-JS7ejKS63U8_zBvKrW01iTI5Nh0Zor3wUq1Twn5ix-GnEPaaCYYVeCA-Ha-Q0Q4QzBk=s1600-w400"
     }
+  }
+}
+
+Error Response (404 Not Found):
+
+- Description: The requested user was not found.
+- Data Format: Error message for human.
+- Status: 404 Not Found
+
+{
+  "error":
+  {
+    "code": "not_found",
+    "message": "The requested user was not found."
   }
 }
