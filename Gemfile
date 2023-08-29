@@ -49,7 +49,6 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry'
   gem 'faker'
-  gem 'jsonapi-serializer'
 end
 
 group :development do
@@ -58,6 +57,6 @@ group :development do
   gem 'rspec-rails'
 end
 
-
+gem 'jsonapi-serializer'
 gem 'faraday'
 gem 'figaro'
