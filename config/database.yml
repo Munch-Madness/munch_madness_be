@@ -84,3 +84,4 @@ production:
   database: munch_madness_be_production
   username: munch_madness_be
   password: <%= ENV["MUNCH_MADNESS_BE_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
