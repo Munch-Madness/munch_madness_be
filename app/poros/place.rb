@@ -2,11 +2,16 @@ class Place
   attr_reader :name, 
               :photo,
               :id,
-              :type
-  def initialize(place, photo)
+              :type, 
+              :price,
+              :rating
+
+  def initialize(place, photo, price, rating)
     @id = "null"
-    @type = "place"
+    @type = "restaurant"
     @name = place
     @photo = photo
+    @price = price
+    @rating = rating
   end
 end

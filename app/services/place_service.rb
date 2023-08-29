@@ -12,7 +12,7 @@ class PlaceService
 
   
   def find_place(info)
-    get_url("/maps/api/place/findplacefromtext/json?input=#{info}&inputtype=textquery&fields=name,photo&key=#{ENV["rest_key"]}")
+    get_url("/maps/api/place/findplacefromtext/json?input=#{info}&inputtype=textquery&fields=name,photo,price_level,rating&key=#{ENV["rest_key"]}")
   end
 
   def find_photo(photo_ref)

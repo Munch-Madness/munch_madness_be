@@ -9,6 +9,7 @@ class PlaceFacade
 
   def find_place
     place = place_service.find_place(@query)
+    require 'pry'; binding.pry
     if place[:candidates].empty?
       []
     elsif
@@ -17,7 +18,7 @@ class PlaceFacade
     else
       place_ref = place[:candidates].first[:photos].first[:photo_reference]
       photo = place_service.find_photo(place_ref)
-      place_item = Place.new(place[:candidates].first[:name], photo.env[:response_headers][:location])
+      place_item = Place.new(place[:candidates].first[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])
     end
   end
 
@@ -26,7 +27,7 @@ class PlaceFacade
     places = service[:results].map do |place|
       place_ref = place[:photos][0][:photo_reference]
       photo = place_service.find_photo(place_ref)
-      place_item = Place.new(place[:name], photo.env[:response_headers][:location])
+      place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])
     end
     # .uniq { |place| place.name }  # we can add this if we don't want duplicate names to pop of for a zipcode, it was making count off though, there are 3 subways for zipcode 80020
   end
