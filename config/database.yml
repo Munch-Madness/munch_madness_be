@@ -81,7 +81,9 @@ test:
 #
 production:
   <<: *default
-  database: munch_madness_be_production
-  username: munch_madness_be
-  password: <%= ENV["MUNCH_MADNESS_BE_DATABASE_PASSWORD"] %>
-  url: <%= ENV["DATABASE_URL"] %>
+adapter: postgresql
+  host: ec2-44-215-40-87.compute-1.amazonaws.com
+  port: 5432
+  database: d2lvjvp06u5511
+  username: nbvbwadtujfoew
+  password: 4b9b1de9fabf0eaa4eb7e46687f6d4cacaeb2fc88ceecd8c3705c312d79bc340
