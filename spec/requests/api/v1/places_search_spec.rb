@@ -11,7 +11,6 @@ RSpec.describe "Get Place Endpoint" do
       
       expect(place_data).to be_a(Hash)
       expect(place_data).to have_key(:data)
-
       expect(place_data[:data]).to be_a(Hash)
       
       expect(place_data[:data]).to have_key(:id)
