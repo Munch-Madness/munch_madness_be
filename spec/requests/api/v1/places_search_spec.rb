@@ -33,6 +33,7 @@ RSpec.describe "Get Place Endpoint" do
     it 'returns an error if no place is found', :vcr do
       query = "xxxxxxxxxxxxxx"
       get "/api/v1/places/search", params: { query: query }
+      require 'pry'; binding.pry
       expect(response).to_not be_successful
       expect(response.status).to eq 404
       expect(response.body).to eq "no restaurants located with search query"
