@@ -43,11 +43,13 @@ Description of API endpoints for front end application
 
 `GET /api/v1/places/search`
 
+postman request url:  http://localhost:3000/api/v1/places/search?query={restaurant}
+
 Success Response (200 OK):
 
 - Status: 200 OK
 - Description: Successful response with a specific place's name and photo based on a users input query.
-- Data Format: A data hash, with keys "id", "type" and "attributes".
+- Data Format: A data array, with keys "id", "type" and "attributes".
 ```json
 {
   "data": {
@@ -59,17 +61,62 @@ Success Response (200 OK):
     }
   }
 }
+```
 
 Error Response (404 Not Found):
 
 - Description: The requested user was not found.
 - Data Format: Error message for human.
 - Status: 404 Not Found
+```
+no restaurants located with search query
 
+```
+## GETting a list of 20 places based on zipcode
+
+`GET /api/v1/places/`
+postman url request: http://localhost:3000/api/v1/places/?query={zipcode}&search=random
+
+Success Response (200 OK):
+
+- Status: 200 OK
+- Description: Successful response with list of place object based on a users input zipcode query.
+- Data Format: A data array, with keys "id", "type" and "attributes".
+```json
 {
-  "error":
-  {
-    "code": "not_found",
-    "message": "The requested user was not found."
-  }
+    "data": [
+        {
+            "id": "null",
+            "type": "place",
+            "attributes": {
+                "name": "Casa Bonita",
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3DtrdH49oLIRYy0lNaYPvYK3J1UIy8d4Efhsc5yRUPQikZHHqCVWiAwmxzPiIIgiwmDyeSAJEWzBXsd26iwsHBncCdiiT9D-aZU=s1600-w400"
+            }
+        },
+        {
+            "id": "null",
+            "type": "place",
+            "attributes": {
+                "name": "Strange Craft Beer Company",
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3Dtgj7bj3zxEjB1tkkh26Ay-w9kav5J6vEeoP6vaVW2dJMc51o6If9yl5PzOhfHaOFvdGok3uTOz7AucKNqnj_2g00uoADtRYGM=s1600-w400"
+            }
+        },
+        {
+            "id": "null",
+            "type": "place",
+            "attributes": {
+                "name": "El Tapatio Mexican Restaurant",
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3DsAjWEedU0nZS2WamUtAxrZ8ULozGUPidDJvesUbabdPnHcQizivbLjD3RTc3IXWNVBwrI5nqwi77-7N-xPswx6V5oR6wnkymg=s1600-w400"
+            }
+        },
+        {
+            "id": "null",
+            "type": "place",
+            "attributes": {
+                "name": "Olive Garden Italian Restaurant",
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3DtatEfy9h7LCUS-s90hqmZHQ2V5ovmJqR8BwQvvPHZ4z1TMZY9Kg8ZI7C8AigAgoj4NY4dsBpg81U9YND63yYr4SUHYipfImKA=s1600-w400"
+            }
+        }
+    ]
 }
+```
