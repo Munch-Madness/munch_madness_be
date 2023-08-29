@@ -28,5 +28,6 @@ class PlaceFacade
       photo = place_service.find_photo(place_ref)
       place_item = Place.new(place[:name], photo.env[:response_headers][:location])
     end
+    # .uniq { |place| place.name }  # we can add this if we don't want duplicate names to pop of for a zipcode, it was making count off though, there are 3 subways for zipcode 80020
   end
 end
