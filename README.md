@@ -57,7 +57,9 @@ Success Response (200 OK):
     "type": "place",
     "attributes": {
       "name": "Crown Burgers",
-      "photo": "https://lh3.googleusercontent.com/places/ANJU3DuludbQiMipPRqm_ojX_TZOR1PRa16-JS7ejKS63U8_zBvKrW01iTI5Nh0Zor3wUq1Twn5ix-GnEPaaCYYVeCA-Ha-Q0Q4QzBk=s1600-w400"
+      "photo": "https://images.app.goo.gl/brHvUtTzH2wBfBq77",
+      "price": 2, 
+      "rating": 4.9
     }
   }
 }
@@ -90,7 +92,9 @@ Success Response (200 OK):
             "type": "place",
             "attributes": {
                 "name": "Casa Bonita",
-                "photo": "https://lh3.googleusercontent.com/places/ANJU3DtrdH49oLIRYy0lNaYPvYK3J1UIy8d4Efhsc5yRUPQikZHHqCVWiAwmxzPiIIgiwmDyeSAJEWzBXsd26iwsHBncCdiiT9D-aZU=s1600-w400"
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3DtrdH49oLIRYy0lNaYPvYK3J1UIy8d4Efhsc5yRUPQikZHHqCVWiAwmxzPiIIgiwmDyeSAJEWzBXsd26iwsHBncCdiiT9D-aZU=s1600-w400",
+                "price": 2, 
+                "rating": 3.5
             }
         },
         {
@@ -98,7 +102,9 @@ Success Response (200 OK):
             "type": "place",
             "attributes": {
                 "name": "Strange Craft Beer Company",
-                "photo": "https://lh3.googleusercontent.com/places/ANJU3Dtgj7bj3zxEjB1tkkh26Ay-w9kav5J6vEeoP6vaVW2dJMc51o6If9yl5PzOhfHaOFvdGok3uTOz7AucKNqnj_2g00uoADtRYGM=s1600-w400"
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3Dtgj7bj3zxEjB1tkkh26Ay-w9kav5J6vEeoP6vaVW2dJMc51o6If9yl5PzOhfHaOFvdGok3uTOz7AucKNqnj_2g00uoADtRYGM=s1600-w400",
+                "price": 1, 
+                "rating": 4.8
             }
         },
         {
@@ -106,7 +112,9 @@ Success Response (200 OK):
             "type": "place",
             "attributes": {
                 "name": "El Tapatio Mexican Restaurant",
-                "photo": "https://lh3.googleusercontent.com/places/ANJU3DsAjWEedU0nZS2WamUtAxrZ8ULozGUPidDJvesUbabdPnHcQizivbLjD3RTc3IXWNVBwrI5nqwi77-7N-xPswx6V5oR6wnkymg=s1600-w400"
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3DsAjWEedU0nZS2WamUtAxrZ8ULozGUPidDJvesUbabdPnHcQizivbLjD3RTc3IXWNVBwrI5nqwi77-7N-xPswx6V5oR6wnkymg=s1600-w400",
+                "price": 1, 
+                "rating": 4.6
             }
         },
         {
@@ -114,7 +122,9 @@ Success Response (200 OK):
             "type": "place",
             "attributes": {
                 "name": "Olive Garden Italian Restaurant",
-                "photo": "https://lh3.googleusercontent.com/places/ANJU3DtatEfy9h7LCUS-s90hqmZHQ2V5ovmJqR8BwQvvPHZ4z1TMZY9Kg8ZI7C8AigAgoj4NY4dsBpg81U9YND63yYr4SUHYipfImKA=s1600-w400"
+                "photo": "https://lh3.googleusercontent.com/places/ANJU3DtatEfy9h7LCUS-s90hqmZHQ2V5ovmJqR8BwQvvPHZ4z1TMZY9Kg8ZI7C8AigAgoj4NY4dsBpg81U9YND63yYr4SUHYipfImKA=s1600-w400",
+                "price": 2, 
+                "rating": 4.1
             }
         }
     ]
