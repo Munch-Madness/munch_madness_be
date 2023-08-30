@@ -13,6 +13,8 @@ RSpec.describe PlaceService do
       expect(place_serv[:photos].first).to be_a(Hash)
       expect(place_serv[:photos].first).to have_key(:photo_reference)
       expect(place_serv[:photos].first[:photo_reference]).to be_a(String)
+      expect(place_serv).to have_key(:price_level)
+      expect(place_serv).to have_key(:rating)
     end
 
     it "finds photo", :vcr do

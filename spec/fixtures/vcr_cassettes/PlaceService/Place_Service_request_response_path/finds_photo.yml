@@ -198,5 +198,103 @@ http_interactions:
         Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
         HREF=\"https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
   recorded_at: Tue, 29 Aug 2023 20:55:13 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/findplacefromtext/json?fields=name,photo,price_level,rating&input=crown%20burger&inputtype=textquery&key=google_key
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '703'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Date:
+      - Wed, 30 Aug 2023 02:09:02 GMT
+      Expires:
+      - Wed, 30 Aug 2023 02:14:02 GMT
+      Cache-Control:
+      - public, max-age=300
+      Content-Type:
+      - application/json; charset=UTF-8
+      Age:
+      - '68'
+      Server-Timing:
+      - gfet4t7; dur=1
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "{\n   \"candidates\" : \n   [\n      {\n         \"name\" : \"Crown
+        Burgers\",\n         \"photos\" : \n         [\n            {\n               \"height\"
+        : 3024,\n               \"html_attributions\" : \n               [\n                  \"\\u003ca
+        href=\\\"https://maps.google.com/maps/contrib/113899924754079514773\\\"\\u003eMatt
+        G\\u003c/a\\u003e\"\n               ],\n               \"photo_reference\"
+        : \"AUacShh5bFUNDFyT_J7XzPfccYeD4IWv7jaaCJSn9kvZfj7C91gYFUlW7NyFr7BCJEutIGSiXAp4JS4xYFAPgk1TK5ZggZz-5U7eGen9RPmHzYfe2bGChn4FgaLLSAEbK_saOFd_3OQn8npMHSl_4D2GdcOHM7366B7vQ2BXzRY3ArUpbAGM\",\n
+        \              \"width\" : 4032\n            }\n         ],\n         \"price_level\"
+        : 1,\n         \"rating\" : 4.7\n      }\n   ],\n   \"status\" : \"OK\"\n}"
+  recorded_at: Wed, 30 Aug 2023 02:10:10 GMT
+- request:
+    method: get
+    uri: https://maps.googleapis.com/maps/api/place/photo?key=google_key&maxwidth=400&photo_reference=AUacShh5bFUNDFyT_J7XzPfccYeD4IWv7jaaCJSn9kvZfj7C91gYFUlW7NyFr7BCJEutIGSiXAp4JS4xYFAPgk1TK5ZggZz-5U7eGen9RPmHzYfe2bGChn4FgaLLSAEbK_saOFd_3OQn8npMHSl_4D2GdcOHM7366B7vQ2BXzRY3ArUpbAGM
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 302
+      message: Found
+    headers:
+      Date:
+      - Wed, 30 Aug 2023 02:10:11 GMT
+      Pragma:
+      - no-cache
+      Expires:
+      - Fri, 01 Jan 1990 00:00:00 GMT
+      Cache-Control:
+      - no-cache, must-revalidate
+      Location:
+      - https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400
+      Content-Type:
+      - text/html; charset=UTF-8
+      Server:
+      - scaffolding on HTTPServer2
+      Content-Length:
+      - '352'
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      Server-Timing:
+      - gfet4t7; dur=46
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+    body:
+      encoding: UTF-8
+      string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
+        Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
+        HREF=\"https://lh3.googleusercontent.com/places/ANJU3DuVHzH5rjYfhsVetgmonvQlNvmjJ8QBx3GlnENIYlmiEKzTMtw1GECLP0bWIs26cGzgsEIF3zTn0HoHaXelwxnY1tv7evpTg0U=s1600-w400\">here</A>.\r\n</BODY></HTML>\r\n"
+  recorded_at: Wed, 30 Aug 2023 02:10:11 GMT
 recorded_with: VCR 6.2.0
-

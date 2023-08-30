@@ -9,7 +9,7 @@ RSpec.describe PlaceFacade do
 
       expect(place).to be_a Place
       expect(place.id).to eq "null"
-      expect(place.type).to eq "place"
+      expect(place.type).to eq "restaurant"
       expect(place.name).to be_a String
       expect(place.photo).to be_a String
     end

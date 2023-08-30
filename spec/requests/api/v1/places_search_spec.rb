@@ -6,6 +6,7 @@ RSpec.describe "Get Place Endpoint" do
       query = "crown burger"
       get "/api/v1/places/search", params: { query: query }
       place_data = JSON.parse(response.body, symbolize_names: true)
+
       expect(response).to be_successful
       expect(response.status).to eq(200)
       
@@ -27,6 +28,12 @@ RSpec.describe "Get Place Endpoint" do
       
       expect(place_data[:data][:attributes]).to have_key(:photo)
       expect(place_data[:data][:attributes][:photo]).to be_a(String)
+
+      expect(place_data[:data][:attributes]).to have_key(:price)
+      expect(place_data[:data][:attributes][:price]).to be_a(Integer)
+
+      expect(place_data[:data][:attributes]).to have_key(:rating)
+      expect(place_data[:data][:attributes][:rating]).to be_a(Float)
     end
 
     it 'returns an error if no place is found', :vcr do
@@ -42,6 +49,7 @@ RSpec.describe "Get Place Endpoint" do
       get "/api/v1/places", params: { query: query, search: "random" }
 
       place_data = JSON.parse(response.body, symbolize_names: true)
+
       expect(response).to be_successful
       expect(response.status).to eq(200)
 
@@ -65,6 +73,12 @@ RSpec.describe "Get Place Endpoint" do
       
       expect(place_data[:data][0][:attributes]).to have_key(:photo)
       expect(place_data[:data][0][:attributes][:photo]).to be_a(String)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:price)
+      expect(place_data[:data][0][:attributes][:price]).to be_a(Integer)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:rating)
+      expect(place_data[:data][0][:attributes][:rating]).to be_a(Float)
     end
   end
 end

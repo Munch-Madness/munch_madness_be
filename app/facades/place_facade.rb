@@ -9,7 +9,6 @@ class PlaceFacade
 
   def find_place
     place = place_service.find_place(@query)
-    require 'pry'; binding.pry
     if place[:candidates].empty?
       []
     elsif
@@ -18,7 +17,7 @@ class PlaceFacade
     else
       place_ref = place[:candidates].first[:photos].first[:photo_reference]
       photo = place_service.find_photo(place_ref)
-      place_item = Place.new(place[:candidates].first[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])
+      place_item = Place.new(place[:candidates].first[:name], photo.env[:response_headers][:location], place[:candidates].first[:price_level], place[:candidates].first[:rating])
     end
   end
 
