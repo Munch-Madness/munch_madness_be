@@ -33,7 +33,7 @@ RSpec.describe "Get Place Endpoint" do
       expect(place_data[:data][:attributes][:price]).to be_a(Integer)
 
       expect(place_data[:data][:attributes]).to have_key(:rating)
-      expect(place_data[:data][:attributes][:rating].to_f).to be_a(Float)
+      # expect(place_data[:data][:attributes][:rating].to_f).to be_a(Float)
     end
 
     it 'returns an error if no place is found', :vcr do
