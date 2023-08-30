@@ -391,3 +391,17 @@ restaurant55 = Restaurant.create!(
   price: "1",
   rating: "3.3",
 )
+
+restaurant56 = Restaurant.create!(
+  name: "Bakery Four",
+  photo: "https://images.app.goo.gl/ADhsaKWrfqj59M3m8",
+  price: "1",
+  rating: "4.9",
+)
+
+restaurant57 = Restaurant.create!(
+  name: "Call Your Mother Deli",
+  photo: "https://images.app.goo.gl/QihXF4DXxV6pKhWd9",
+  price: "1",
+  rating: "4.8",
+)
