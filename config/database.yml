@@ -81,7 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: munch_madness_be_production
+  database: d2lvjvp06u5511
   username: munch_madness_be
   password: <%= ENV["MUNCH_MADNESS_BE_DATABASE_PASSWORD"] %>
   url: <%= ENV["DATABASE_URL"] %>
