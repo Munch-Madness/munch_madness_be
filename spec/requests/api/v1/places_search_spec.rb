@@ -6,6 +6,7 @@ RSpec.describe "Get Place Endpoint" do
       query = "crown burger"
       get "/api/v1/places/search", params: { query: query }
       place_data = JSON.parse(response.body, symbolize_names: true)
+
       expect(response).to be_successful
       expect(response.status).to eq(200)
       
@@ -27,6 +28,12 @@ RSpec.describe "Get Place Endpoint" do
       
       expect(place_data[:data][:attributes]).to have_key(:photo)
       expect(place_data[:data][:attributes][:photo]).to be_a(String)
+
+      expect(place_data[:data][:attributes]).to have_key(:price)
+      expect(place_data[:data][:attributes][:price]).to be_a(Integer)
+
+      expect(place_data[:data][:attributes]).to have_key(:rating)
+      # expect(place_data[:data][:attributes][:rating].to_f).to be_a(Float)
     end
 
     it 'returns an error if no place is found', :vcr do
@@ -39,9 +46,10 @@ RSpec.describe "Get Place Endpoint" do
 
     it "returns a list of random restaurants", :vcr do
       query = "80020"
-      get "/api/v1/places", params: { query: query, search: "random" }
+      get "/api/v1/places", params: { query: query }
 
       place_data = JSON.parse(response.body, symbolize_names: true)
+
       expect(response).to be_successful
       expect(response.status).to eq(200)
 
@@ -65,6 +73,29 @@ RSpec.describe "Get Place Endpoint" do
       
       expect(place_data[:data][0][:attributes]).to have_key(:photo)
       expect(place_data[:data][0][:attributes][:photo]).to be_a(String)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:price)
+      expect(place_data[:data][0][:attributes][:price]).to be_a(Integer)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:rating)
+      expect(place_data[:data][0][:attributes][:rating]).to be_a(Float)
     end
+
+    it 'returns an error if invalid zipcode is given', :vcr do
+      query = "xxxxxxxxxxxxxx"
+      get "/api/v1/places", params: { query: query }
+      expect(response).to_not be_successful
+      expect(response.status).to eq 404
+      expect(response.body).to eq "location could not be found"
+    end
+
+    # it 'returns an error if no restaurants are found', :vcr do
+    #   query = "00000"
+    #   get "/api/v1/places", params: { query: query }
+    #   expect(response).to_not be_successful
+    #   expect(response.status).to eq 404
+    #   expect(response.body).to eq "no restaurants located with search query"
+    # end
+    # LG note: unable to find a zipcode that does not have any restaurants
   end
 end
