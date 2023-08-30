@@ -405,3 +405,24 @@ restaurant57 = Restaurant.create!(
   price: "1",
   rating: "4.8",
 )
+
+restaurant58 = Restaurant.create!(
+  name: "Cheba Hut Toasted Subs",
+  photo: "https://images.app.goo.gl/JnE2mNCspwb2WPzz9",
+  price: "1",
+  rating: "4.9",
+)
+
+restaurant59 = Restaurant.create!(
+  name: "Freebirds World Burrito",
+  photo: "https://images.app.goo.gl/yAV9WURfJEPxLEGe6",
+  price: "1",
+  rating: "4.5",
+)
+
+restaurant60 = Restaurant.create!(
+  name: "Burgerville",
+  photo: "https://images.app.goo.gl/BHf5gTNZFyeeaspn8",
+  price: "2",
+  rating: "4.8",
+)
