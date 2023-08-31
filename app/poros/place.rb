@@ -7,7 +7,8 @@ class Place
               :rating
 
   def initialize(place, photo, price, rating)
-    # @id = "null"
+    # require 'pry'; binding.pry
+    @id = "null"
     @type = "restaurant"
     @name = place
     @photo = photo

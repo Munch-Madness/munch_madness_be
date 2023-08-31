@@ -47,7 +47,7 @@ RSpec.describe "Get Place Endpoint" do
     it "returns a list of random restaurants", :vcr do
       query = "80020"
       get "/api/v1/places", params: { query: query }
-
+# require 'pry'; binding.pry
       place_data = JSON.parse(response.body, symbolize_names: true)
 
       expect(response).to be_successful

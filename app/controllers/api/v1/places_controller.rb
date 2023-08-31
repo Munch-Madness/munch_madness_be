@@ -5,9 +5,9 @@ class  Api::V1::PlacesController < ApplicationController
       render json: "location could not be found", status: 404
     else
       fetch_restaurants = PlaceFacade.new(location).find_random_restaurants
-      # require 'pry'; binding.pry
+      require 'pry'; binding.pry
       if fetch_restaurants != []
-        render json: PlaceSerializer.new(fetch_restaurants)
+        render json: RestaurantSerializer.new(fetch_restaurants)
       else
         render json: "no restaurants located with search query", status: 404
       end

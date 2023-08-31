@@ -4,11 +4,11 @@ class PlaceFacade
   end
 
   def place_service
-    PlaceService.new
+    @place_service ||= PlaceService.new
   end
 
   def find_place
-    place = place_service.find_place(@query)
+    place = @place_service.find_place(@query)
     if place[:candidates].empty?
       []
     elsif
@@ -16,16 +16,18 @@ class PlaceFacade
       []
     else
       place_ref = place[:candidates].first[:photos].first[:photo_reference]
-      photo = place_service.find_photo(place_ref)
+      photo = @place_service.find_photo(place_ref)
       place_item = Place.new(place[:candidates].first[:name], photo.env[:response_headers][:location], place[:candidates].first[:price_level], place[:candidates].first[:rating])
     end
   end
 
   def find_random_restaurants
-    service = place_service.random_restaurants(@query)
+    require 'pry'; binding.pry
+    service = @place_service.random_restaurants(@query)
     places = service[:results].map do |place|
       place_ref = place[:photos][0][:photo_reference]
-      photo = place_service.find_photo(place_ref)
+      photo = @place_service.find_photo(place_ref)
+      # require 'pry'; binding.pry
       place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])
       check_database(place_item)
     end
@@ -36,7 +38,7 @@ class PlaceFacade
   
   def check_database(place)
     existing = Restaurant.find_by(name: place.name)
-
+# require 'pry'; binding.pry
     if existing
       existing.update(price: place.price, rating: place.rating)
     else
