@@ -237,7 +237,7 @@ Additional features, functionality, and potential refactors:
   * Add the ability to create a link to share with friends so people can vote on their own phones
   * Letting user's save brackets 
   * Adding more fields for restaurant information, seeding logic
-  * Voting feature so multiple can vote on a each matchup for a created bracket
+  * Voting feature so multiple can vote on each matchup for a created bracket
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
