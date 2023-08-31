@@ -1,6 +1,7 @@
 # Munch Madness BE Repo
 
-<a href="#readme-top"></a>
+
+<a id="readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
 <img src="munch-madness-logo-ko.png" alt="Logo" width="400" height="200" margin="0">
@@ -62,7 +63,8 @@ Github repositories:
 * Front End: [![Github][Github]][project-fe-gh-url]
 * Back End:  [![Github][Github]][project-be-gh-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 ### Built With
 
@@ -118,7 +120,8 @@ Munch Madness uses these integrations:
 
 
 ---
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[Back to Top](#readme-top)
+
 
 # API JSON Contract
 
@@ -239,17 +242,18 @@ Additional features, functionality, and potential refactors:
   * Adding more fields for restaurant information, seeding logic
   * Voting feature so multiple can vote on each matchup for a created bracket
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <img src="munch-madness-logo-k.png" alt="Logo" width="400" height="200" margin="0">
+
+[Back to Top](#readme-top)
 
 <!-- CONTACT -->
 
