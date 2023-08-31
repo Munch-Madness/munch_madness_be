@@ -1,4 +1,4 @@
 class PlaceSerializer
   include JSONAPI::Serializer
-  attributes :name, :photo, :price, :rating
+  attributes :id, :name, :photo, :price, :rating
 end

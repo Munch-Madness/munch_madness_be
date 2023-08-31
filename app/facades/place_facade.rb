@@ -27,7 +27,29 @@ class PlaceFacade
       place_ref = place[:photos][0][:photo_reference]
       photo = place_service.find_photo(place_ref)
       place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])
+      check_database(place_item)
     end
     # .uniq { |place| place.name }  # we can add this if we don't want duplicate names to pop of for a zipcode, it was making count off though, there are 3 subways for zipcode 80020
+  end
+
+  private
+  
+  def check_database(place)
+    existing = Restaurant.find_by(name: place.name)
+
+    if existing
+      existing.update(price: place.price, rating: place.rating)
+    else
+      new_restaurant(place)
+    end
+  end
+
+  def new_restaurant(place)
+    restaurant = Restaurant.create!(
+      name: place.name,
+      photo: place.photo,
+      price: place.price,
+      rating: place.rating
+    )
   end
 end

@@ -7,7 +7,7 @@ class Place
               :rating
 
   def initialize(place, photo, price, rating)
-    @id = "null"
+    # @id = "null"
     @type = "restaurant"
     @name = place
     @photo = photo

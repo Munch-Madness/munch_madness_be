@@ -8,7 +8,7 @@ RSpec.describe PlaceFacade do
       
 
       expect(place).to be_a Place
-      expect(place.id).to eq "null"
+      # expect(place.id).to eq "null"
       expect(place.type).to eq "restaurant"
       expect(place.name).to be_a String
       expect(place.photo).to be_a String
@@ -41,11 +41,11 @@ RSpec.describe PlaceFacade do
 
       expect(restaurants).to be_an(Array)
       expect(restaurants.count).to eq(20)
-      expect(restaurants.first).to be_a(Place)
+      expect(restaurants.first).to be_a(Restaurant)
       expect(restaurants.first.name).to be_a(String)
       expect(restaurants.first.photo).to be_a(String)
-      expect(restaurants.first.price).to be_a(Integer)
-      expect(restaurants.first.rating).to be_a(Float)
+      expect(restaurants.first.price).to be_a(String)
+      expect(restaurants.first.rating).to be_a(String)
     end
   end
 end
