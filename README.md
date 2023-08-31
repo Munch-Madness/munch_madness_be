@@ -1,6 +1,6 @@
 # Munch Madness BE Repo
 
-<a name="#readme-top"></a>
+<a href="#readme-top"></a>
 
 <!-- PROJECT SHIELDS -->
 <img src="munch-madness-logo-ko.png" alt="Logo" width="400" height="200" margin="0">
@@ -154,7 +154,7 @@ Success Response (200 OK):
 
 Error Response (404 Not Found):
 
-- Description: The requested user was not found.
+- Description: The requested place was not found.
 - Data Format: Error message for human.
 - Status: 404 Not Found
 ```
@@ -173,7 +173,7 @@ heroku request url: https://munch-madness-be-8b56c3719f5f.herokuapp.com/api/v1/p
 Success Response (200 OK):
 
 - Status: 200 OK
-- Description: Successful response with list of place object based on a users input zipcode query.
+- Description: Successful response with list of place objects based on a user input zipcode query.
 - Data Format: A data array, with keys "id", "type" and "attributes".
 ```json
 {
@@ -224,7 +224,7 @@ Success Response (200 OK):
 
 Error Response (404 Not Found):
 
-- Description: The requested user was not found.
+- Description: The requested location was not found.
 - Data Format: Error message for human.
 - Status: 404 Not Found
 ```
