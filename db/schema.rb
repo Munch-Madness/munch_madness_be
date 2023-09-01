@@ -13,7 +13,7 @@
 ActiveRecord::Schema[7.0].define(version: 2023_08_30_024444) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
+ 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
     t.string "photo"
