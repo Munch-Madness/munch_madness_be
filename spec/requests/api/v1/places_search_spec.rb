@@ -34,6 +34,12 @@ RSpec.describe "Get Place Endpoint" do
 
       expect(place_data[:data][:attributes]).to have_key(:rating)
       # expect(place_data[:data][:attributes][:rating].to_f).to be_a(Float)
+
+      expect(place_data[:data][:attributes]).to have_key(:website)
+      expect(place_data[:data][:attributes][:website]).to be_a(String)
+
+      expect(place_data[:data][:attributes]).to have_key(:address)
+      expect(place_data[:data][:attributes][:address]).to be_a(String)
     end
 
     it 'returns an error if no place is found', :vcr do
@@ -79,6 +85,12 @@ RSpec.describe "Get Place Endpoint" do
 
       expect(place_data[:data][0][:attributes]).to have_key(:rating)
       expect(place_data[:data][0][:attributes][:rating]).to be_a(Float)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:website)
+      expect(place_data[:data][0][:attributes][:website]).to be_a(String)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:address)
+      expect(place_data[:data][0][:attributes][:address]).to be_a(String)
     end
 
     it 'returns an error if invalid zipcode is given', :vcr do
@@ -92,7 +104,6 @@ RSpec.describe "Get Place Endpoint" do
     it 'returns an error if no restaurants are found', :vcr do
       query = "68446"
       get "/api/v1/places", params: { query: query }
-      # require 'pry'; binding.pry
       expect(response).to_not be_successful
       expect(response.status).to eq 404
       expect(response.body).to eq "not enough restaurants located within parameters of search query"

@@ -8,13 +8,11 @@ class PlaceService
   def get_url(url)
     response = conn.get(url)
     JSON.parse(response.body, symbolize_names: true)
-    # require 'pry'; binding.pry
   end
-
   
   def find_place(info)
     key = ENV["rest_key"]
-    get_url("/maps/api/place/findplacefromtext/json?input=#{info}&inputtype=textquery&fields=name,photo,price_level,rating&key=#{key}")    
+    get_url("/maps/api/place/findplacefromtext/json?input=#{info}&inputtype=textquery&fields=name,photo,price_level,rating,place_id&key=#{key}")    
   end
 
   def find_photo(photo_ref)
@@ -26,5 +24,10 @@ class PlaceService
   def random_restaurants(location)
     key = ENV["rest_key"]
     get_url("/maps/api/place/nearbysearch/json?location=#{location.latitude.to_f},#{location.longitude.to_f}&radius=50000&type=restaurant&key=#{key}")
+  end
+
+  def get_place_details(place_id)
+    key = ENV["rest_key"]
+    get_url("/maps/api/place/details/json?place_id=#{place_id}&fields=name,photo,price_level,rating,website,vicinity&key=#{key}")
   end
 end
