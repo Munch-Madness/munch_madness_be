@@ -89,13 +89,13 @@ RSpec.describe "Get Place Endpoint" do
       expect(response.body).to eq "location could not be found"
     end
 
-    # it 'returns an error if no restaurants are found', :vcr do
-    #   query = "00000"
-    #   get "/api/v1/places", params: { query: query }
-    #   expect(response).to_not be_successful
-    #   expect(response.status).to eq 404
-    #   expect(response.body).to eq "no restaurants located with search query"
-    # end
-    # LG note: unable to find a zipcode that does not have any restaurants
+    it 'returns an error if no restaurants are found', :vcr do
+      query = "68446"
+      get "/api/v1/places", params: { query: query }
+      # require 'pry'; binding.pry
+      expect(response).to_not be_successful
+      expect(response.status).to eq 404
+      expect(response.body).to eq "not enough restaurants located within parameters of search query"
+    end
   end
 end
