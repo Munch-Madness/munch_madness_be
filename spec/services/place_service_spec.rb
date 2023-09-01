@@ -5,7 +5,7 @@ RSpec.describe PlaceService do
     it "finds place", :vcr do
       params = "crown burger"
       place_serv = PlaceService.new.find_place(params)[:candidates].first
-# require 'pry'; binding.pry
+
       expect(place_serv).to be_a(Hash)
       expect(place_serv).to have_key(:name)
       expect(place_serv).to have_key(:photos)
@@ -15,6 +15,7 @@ RSpec.describe PlaceService do
       expect(place_serv[:photos].first[:photo_reference]).to be_a(String)
       expect(place_serv).to have_key(:price_level)
       expect(place_serv).to have_key(:rating)
+      expect(place_serv).to have_key(:place_id)
     end
 
     it "finds photo", :vcr do
@@ -38,7 +39,7 @@ RSpec.describe PlaceService do
       })
 
       restaurants = PlaceService.new.random_restaurants(location)
-# require 'pry'; binding.pry
+
       expect(restaurants).to be_a(Hash)
       expect(restaurants).to have_key(:results)
       expect(restaurants[:results]).to be_an(Array)
@@ -52,7 +53,21 @@ RSpec.describe PlaceService do
       expect(restaurants[:results][0]).to have_key(:rating)
       expect(restaurants[:results][0]).to have_key(:price_level)
       expect(restaurants[:results][0]).to have_key(:vicinity)
-    
+    end
+
+    it "finds place details", :vcr do
+      place_id = "ChIJe-rLtxV-bIcRb6mSFNp9wXA"
+      place_serv = PlaceService.new.get_place_details(place_id)
+
+      expect(place_serv).to be_a(Hash)
+      expect(place_serv).to have_key(:result)
+      expect(place_serv[:result]).to be_a(Hash)
+      expect(place_serv[:result]).to have_key(:name)
+      expect(place_serv[:result]).to have_key(:photos)
+      expect(place_serv[:result]).to have_key(:vicinity)
+      expect(place_serv[:result]).to have_key(:website)
+      expect(place_serv[:result]).to have_key(:price_level)
+      expect(place_serv[:result]).to have_key(:rating)
     end
   end
 end

@@ -47,5 +47,6 @@ RSpec.describe PlaceFacade do
       expect(restaurants.first.price).to be_a(Integer)
       expect(restaurants.first.rating).to be_a(Float)
     end
+    
   end
 end
