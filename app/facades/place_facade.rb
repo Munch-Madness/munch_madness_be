@@ -4,7 +4,7 @@ class PlaceFacade
   end
 
   def place_service
-    PlaceService.new
+    @place_service ||= PlaceService.new
   end
 
   def find_place
@@ -24,6 +24,7 @@ class PlaceFacade
   def find_random_restaurants
     service = place_service.random_restaurants(@query)
     places = service[:results].map do |place|
+      url = place_service.find_place(place[:name])
       place_ref = place[:photos][0][:photo_reference]
       photo = place_service.find_photo(place_ref)
       place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])

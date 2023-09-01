@@ -5,7 +5,7 @@ RSpec.describe PlaceService do
     it "finds place", :vcr do
       params = "crown burger"
       place_serv = PlaceService.new.find_place(params)[:candidates].first
-
+# require 'pry'; binding.pry
       expect(place_serv).to be_a(Hash)
       expect(place_serv).to have_key(:name)
       expect(place_serv).to have_key(:photos)
@@ -38,7 +38,7 @@ RSpec.describe PlaceService do
       })
 
       restaurants = PlaceService.new.random_restaurants(location)
-
+# require 'pry'; binding.pry
       expect(restaurants).to be_a(Hash)
       expect(restaurants).to have_key(:results)
       expect(restaurants[:results]).to be_an(Array)
@@ -51,6 +51,8 @@ RSpec.describe PlaceService do
       expect(restaurants[:results][0][:photos][0][:photo_reference]).to be_a(String)
       expect(restaurants[:results][0]).to have_key(:rating)
       expect(restaurants[:results][0]).to have_key(:price_level)
+      expect(restaurants[:results][0]).to have_key(:vicinity)
+    
     end
   end
 end
