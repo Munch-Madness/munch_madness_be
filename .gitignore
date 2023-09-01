@@ -32,3 +32,5 @@
 /config/application.yml
 /coverage
 /spec/fixtures/vcr_cassettes
+
+

@@ -23,11 +23,14 @@ class PlaceFacade
 
   def find_random_restaurants
     service = place_service.random_restaurants(@query)
-    places = service[:results].map do |place|
-      place_ref = place[:photos][0][:photo_reference]
-      photo = place_service.find_photo(place_ref)
-      place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])
+    if service[:results].count < 20
+      []
+    else
+      places = service[:results].map do |place|
+        place_ref = place[:photos][0][:photo_reference]
+        photo = place_service.find_photo(place_ref)
+        place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating])
+      end
     end
-    # .uniq { |place| place.name }  # we can add this if we don't want duplicate names to pop of for a zipcode, it was making count off though, there are 3 subways for zipcode 80020
   end
 end
