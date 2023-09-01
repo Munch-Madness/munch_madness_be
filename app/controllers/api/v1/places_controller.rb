@@ -8,7 +8,7 @@ class  Api::V1::PlacesController < ApplicationController
       if fetch_place_photo != []
         render json: PlaceSerializer.new(fetch_place_photo)
       else
-        render json: "no restaurants located with search query", status: 404
+        render json: "not enough restaurants located within parameters of search query", status: 404
       end
     end
   end
