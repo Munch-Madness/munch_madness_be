@@ -24,7 +24,7 @@ class PlaceFacade
 
   def find_random_restaurants
     service = place_service.random_restaurants(@query)
-    if service[:results].count < 20
+    if service[:results].count < 1
       []
     else
       places = service[:results].map do |place|
