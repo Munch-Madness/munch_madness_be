@@ -29,7 +29,7 @@ class PlaceFacade
         place_ref = place[:photos][0][:photo_reference]
         photo = place_service.find_photo(place_ref)
         place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating], place_details[:result][:website], place_details[:result][:vicinity])
-      end
+      end.uniq { |place| place.name }
     end
   end
 end
