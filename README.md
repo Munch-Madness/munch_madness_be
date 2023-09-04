@@ -57,7 +57,7 @@ Munch Madness stands out from other apps by combining the enjoyment of NCAA Marc
 Munch Madness gamifies the process of deciding where to eat or order takeout. Using a tournament-style bracket (1 vs 16, 2 vs 15, 3 vs 14, all the way 8v9 etc.) users can select up to 16 restaurants(based on location) and vote on a winner of each restaurant matchup. The winning restaurant advances to the next round until a final champion is crowned. With the ability to invite friends and engage in friendly competitions, Munch Madness takes the hassle out of choosing where to eat and transforms it into a fun and social experience. <b>This app helps people create their own culinary Cinderella Story!</b>
 <br><br>
 
-Our Production Site is available [here](https://munch-madness-fe.vercel.app/)
+Our Production Site is available [here](https://munch-madness-fe-8b56c3719f5f.herokuapp.com/)    #need to fix this URL later
 
 Github repositories:
 * Front End: [![Github][Github]][project-fe-gh-url]
@@ -70,10 +70,16 @@ Github repositories:
 
 * [![Ruby][Ruby]][Ruby-url]
 * [![Rails][Rails]][Rails-url]
-* [![Tailwind][Tailwind]][Tailwind-url]
 * [![Postgres][Postgres]][Postgres-url]
 * [![Heroku][Heroku]][Heroku-url]
 * [![CircleCI][CircleCI]][CircleCI-url]
+* ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+* [![Tailwind][Tailwind]][Tailwind-url]
+* [![ReactJs][ReactJs]][ReactJs-url]
+* [![TS][TS]][TS-url]
+* ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+* ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+
 
 Munch Madness uses these integrations:
 * [Google Places API](https://developers.google.com/maps/documentation/places/web-service/overview)
@@ -299,3 +305,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [Heroku-url]: https://devcenter.heroku.com/articles/getting-started-with-rails7
 [CircleCI]: https://img.shields.io/badge/circleci-343434?style=for-the-badge&logo=circleci&logoColor=white
 [CircleCI-url]: https://circleci.com/
+[ReactJs]: https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge
+[ReactJs-url]: https://react.dev/
+[TS]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
+[TS-url]: https://www.typescriptlang.org/
