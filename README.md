@@ -57,7 +57,7 @@ Munch Madness stands out from other apps by combining the enjoyment of NCAA Marc
 Munch Madness gamifies the process of deciding where to eat or order takeout. Using a tournament-style bracket (1 vs 16, 2 vs 15, 3 vs 14, all the way 8v9 etc.) users can select up to 16 restaurants(based on location) and vote on a winner of each restaurant matchup. The winning restaurant advances to the next round until a final champion is crowned. With the ability to invite friends and engage in friendly competitions, Munch Madness takes the hassle out of choosing where to eat and transforms it into a fun and social experience. <b>This app helps people create their own culinary Cinderella Story!</b>
 <br><br>
 
-Our Production Site is available [here](https://munch-madness-fe-8b56c3719f5f.herokuapp.com/)    #need to fix this URL later
+Our Production Site is available [here](https://munch-madness-fe.vercel.app/)
 
 Github repositories:
 * Front End: [![Github][Github]][project-fe-gh-url]
