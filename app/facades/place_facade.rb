@@ -11,9 +11,6 @@ class PlaceFacade
     place = place_service.find_place(@query)
     if place[:candidates].empty?
       []
-    elsif
-      place[:candidates].first[:photos].nil?
-      []
     else
       place_ref = place[:candidates].first[:photos].first[:photo_reference]
       photo = place_service.find_photo(place_ref)
