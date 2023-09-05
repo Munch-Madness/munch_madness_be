@@ -19,16 +19,26 @@ class PlaceFacade
     end
   end
 
+
   def find_random_restaurants
+    results = []
+  
     service = place_service.random_restaurants(@query)
-    if service[:results].count < 1
+    results.concat(service[:results])
+  
+    while service[:next_page_token].present?
+      service = place_service.random_restaurants(@query, service[:next_page_token])
+      results.concat(service[:results])
+    end
+  
+    if results.empty?
       []
     else
-      places = service[:results].map do |place|
+      places = results.map do |place|
         place_details = place_service.get_place_details(place[:place_id])
         place_ref = place[:photos][0][:photo_reference]
         photo = place_service.find_photo(place_ref)
-        place_item = Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating], place_details[:result][:website], place_details[:result][:vicinity])
+        Place.new(place[:name], photo.env[:response_headers][:location], place[:price_level], place[:rating], place_details[:result][:website], place_details[:result][:vicinity])
       end.uniq { |place| place.name }
     end
   end

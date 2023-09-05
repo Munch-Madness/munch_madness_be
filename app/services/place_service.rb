@@ -21,10 +21,18 @@ class PlaceService
     conn.get(url)
   end
 
-  def random_restaurants(location)
+  def random_restaurants(location, page_token = nil)
     key = ENV["rest_key"]
-    get_url("/maps/api/place/nearbysearch/json?location=#{location.latitude.to_f},#{location.longitude.to_f}&radius=50000&type=restaurant&key=#{key}")
+    url = "/maps/api/place/nearbysearch/json?location=#{location.latitude.to_f},#{location.longitude.to_f}&radius=50000&type=restaurant&key=#{key}"
+    url += "&pagetoken=#{page_token}" if page_token
+  
+    get_url(url)
   end
+  
+  # def random_restaurants(location)
+  #   key = ENV["rest_key"]
+  #   get_url("/maps/api/place/nearbysearch/json?location=#{location.latitude.to_f},#{location.longitude.to_f}&radius=50000&type=restaurant&key=#{key}")
+  # end
 
   def get_place_details(place_id)
     key = ENV["rest_key"]
