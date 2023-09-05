@@ -63,7 +63,49 @@ RSpec.describe "Get Place Endpoint" do
       expect(place_data).to have_key(:data)
 
       expect(place_data[:data]).to be_an(Array)
-      expect(place_data[:data].count).to eq(20)
+      expect(place_data[:data].count).to eq(38)
+      
+      expect(place_data[:data][0]).to have_key(:id)
+      expect(place_data[:data][0][:id]).to be_a(String)
+
+      expect(place_data[:data][0]).to have_key(:type)
+      expect(place_data[:data][0][:type]).to be_a(String)
+      
+      expect(place_data[:data][0]).to have_key(:attributes)
+      expect(place_data[:data][0][:attributes]).to be_a(Hash)
+      
+      expect(place_data[:data][0][:attributes]).to have_key(:name)
+      expect(place_data[:data][0][:attributes][:name]).to be_a(String)
+      
+      expect(place_data[:data][0][:attributes]).to have_key(:photo)
+      expect(place_data[:data][0][:attributes][:photo]).to be_a(String)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:price)
+      expect(place_data[:data][0][:attributes][:price]).to be_a(Integer)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:rating)
+      expect(place_data[:data][0][:attributes][:rating]).to be_a(Float)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:website)
+      expect(place_data[:data][0][:attributes][:website]).to be_a(String)
+
+      expect(place_data[:data][0][:attributes]).to have_key(:address)
+      expect(place_data[:data][0][:attributes][:address]).to be_a(String)
+    end
+    it "returns a list of random restaurants from a different zipcode", :vcr do
+      query = "47404"
+      get "/api/v1/places", params: { query: query }
+
+      place_data = JSON.parse(response.body, symbolize_names: true)
+
+      expect(response).to be_successful
+      expect(response.status).to eq(200)
+
+      expect(place_data).to be_a(Hash)
+      expect(place_data).to have_key(:data)
+
+      expect(place_data[:data]).to be_an(Array)
+      expect(place_data[:data].count).to eq(19)
       
       expect(place_data[:data][0]).to have_key(:id)
       expect(place_data[:data][0][:id]).to be_a(String)
